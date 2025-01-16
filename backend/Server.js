@@ -14,7 +14,7 @@ app.use(cors());
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb://eeee:eeee@195.35.20.80:27017/todoforserver?authSource=admin", {
+  .connect("mongodb://eeee:eeee@127.0.0.1:27017/todoforserver?authSource=admin", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
