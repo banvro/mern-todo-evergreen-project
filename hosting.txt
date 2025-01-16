@@ -1,0 +1,6 @@
+db.createUser({user: "eeee" , pwd: passwordPrompt() , roles: ["root"]})
+
+  mongosh --port 27017 --authenticationDatabase "admin" -u "eeee" -p "eeee"
+
+
+db.createUser({user:"kristina", pwd:passwordPrompt(), roles:[{role:"readWrite", db:"database_name"}]})
