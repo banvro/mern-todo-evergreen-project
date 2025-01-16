@@ -4,3 +4,23 @@ db.createUser({user: "eeee" , pwd: passwordPrompt() , roles: ["root"]})
 
 
 db.createUser({user:"kristina", pwd:passwordPrompt(), roles:[{role:"readWrite", db:"database_name"}]})
+
+
+
+
+
+
+nano /etc/nginx/sites-available/ssb18.in.conf
+
+server {
+    listen 80;
+    server_name ssb18.in www.ssb18.in;
+
+    location / {
+        root /var/www/mern-todo-evergreen-project/frontend/dist;
+        try_files $uri /index.html;
+    }
+}
+
+
+ln -s /etc/nginx/sites-available/ssb18.in.conf /etc/nginx/sites-enabled/
