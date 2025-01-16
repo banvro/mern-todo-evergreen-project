@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 // /todoforserver
 mongoose
-  .connect("mongodb://kristina:kristina@127.0.0.1:27017/todoforserver")
+  .connect("mongodb://eeee:eeee@127.0.0.1:27017/todoforserver")
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log(err));
 
